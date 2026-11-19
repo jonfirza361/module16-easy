@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria ime e Imazheve</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Galeria ime e Imazheve</h1>
+
+    <div class="gallery">
+
+        <img src="https://picsum.photos/id/1015/400/300">
+        <img src="https://picsum.photos/id/1016/400/300">
+        <img src="https://picsum.photos/id/1018/400/300">
+        <img src="https://picsum.photos/id/1020/400/300">
+        <img src="https://picsum.photos/id/1024/400/300">
+        <img src="https://picsum.photos/id/1035/400/300">
+
+    </div>
+
+</body>
+</html>
